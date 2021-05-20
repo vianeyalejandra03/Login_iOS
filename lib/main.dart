@@ -135,7 +135,7 @@ class _IngresoSistemaState extends State<IngresoSistema> {
                   Text('Lograste entrar BIENVENIDO'),
                   RaisedButton(
                     elevation: 20.0,
-                    child: Text('Logout'),
+                    child: Text('Salir'),
                     onPressed: () {
                       setState(() {
                         acceso = false;
