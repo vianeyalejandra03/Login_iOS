@@ -127,6 +127,25 @@ class _IngresoSistemaState extends State<IngresoSistema> {
               ) //fin de padding
             ] //fin de widget
                 ) //fin de columna
+          //fin de if verdadero
+          else
+            Center(
+              child: Column(
+                children: <Widget>[
+                  Text('Lograste entrar BIENVENIDO'),
+                  RaisedButton(
+                    elevation: 20.0,
+                    child: Text('Logout'),
+                    onPressed: () {
+                      setState(() {
+                        acceso = false;
+                      });
+                    },
+                  )
+                ], //fin de widget
+              ),
+            ) //fin de center
+//fin de else falso
         ] //fin de widget
 
             ), //fin de listview
