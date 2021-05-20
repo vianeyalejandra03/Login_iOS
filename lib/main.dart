@@ -114,7 +114,7 @@ class _IngresoSistemaState extends State<IngresoSistema> {
                     ),
                     RaisedButton(
                       child: Text(
-                        'SIGUIENTE2',
+                        'SIGUIENTE',
                       ),
                       onPressed: () {
                         setState(() {
