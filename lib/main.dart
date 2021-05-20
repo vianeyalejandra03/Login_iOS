@@ -73,8 +73,7 @@ class _IngresoSistemaState extends State<IngresoSistema> {
         title: Text('registro Benitez'),
       ), //fin de appbar
       body: SafeArea(
-        child: ListView(padding: EdgeInsets.symmetric(horizontal: 24.0), 
-        children: <Widget>[
+        child: ListView(padding: EdgeInsets.symmetric(horizontal: 24.0), children: <Widget>[
           SizedBox(height: 80.0),
           Column(
             children: <Widget>[
@@ -82,6 +81,21 @@ class _IngresoSistemaState extends State<IngresoSistema> {
               SizedBox(height: 20.0),
             ],
           ), //fin de column
+          if (!acceso)
+            {
+              Column(children: <Widget>[
+                TextField(
+                  decoration: InputDecoration(
+                    filled: true,
+                    // fillColor: Colors.amber,
+                    labelText: 'Username',
+                  ),
+                ), //fin de textfield1
+              ] //fin de widget
+                  ) //fin de columna
+            } //if fin
+          else
+            {} //fin de else
         ] //fin de widget
 
             ), //fin de listview
