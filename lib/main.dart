@@ -82,18 +82,17 @@ class _IngresoSistemaState extends State<IngresoSistema> {
             ],
           ), //fin de column
           if (!acceso)
-            {
-              Column(children: <Widget>[
-                TextField(
-                  decoration: InputDecoration(
-                    filled: true,
-                    // fillColor: Colors.amber,
-                    labelText: 'Username',
-                  ),
-                ), //fin de textfield1
-              ] //fin de widget
-                  ) //fin de columna
-            } //if fin
+            Column(children: <Widget>[
+              TextField(
+                decoration: InputDecoration(
+                  filled: true,
+                  // fillColor: Colors.amber,
+                  labelText: 'Username',
+                ),
+              ), //fin de textfield1
+            ] //fin de widget
+                ) //fin de columna
+          //if fin
           //   else{} //fin de else
         ] //fin de widget
 
