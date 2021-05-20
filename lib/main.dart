@@ -87,13 +87,19 @@ class _IngresoSistemaState extends State<IngresoSistema> {
                 decoration: InputDecoration(
                   filled: true,
                   // fillColor: Colors.amber,
-                  labelText: 'Username',
+                  labelText: 'Nombre de usuario',
                 ),
               ), //fin de textfield1
+              SizedBox(height: 12.0),
+              TextField(
+                decoration: InputDecoration(
+                  filled: true,
+                  labelText: 'Contraseña',
+                ),
+                obscureText: true,
+              ), //fin de text field 2
             ] //fin de widget
                 ) //fin de columna
-          //if fin
-          //   else{} //fin de else
         ] //fin de widget
 
             ), //fin de listview
